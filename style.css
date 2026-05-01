@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "myFont";
+  src: url(./JasonHandwriting1.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "myFont", DFkai-sb, sans-serif;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-weight: normal;
+}
+
+p,
+ul,
+table,
+tr,
+th,
+td,
+.white {
+  color: white;
+}
+
+header div.top {
+  padding: 1rem;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+header div.top h1 {
+  font-size: 2.5rem;
+}
+
+header div.top h3 {
+  font-size: 1rem;
+}
+
+header nav {
+  background-color: black;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul li {
+  padding: 0.8rem 1.2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s linear;
+}
+
+nav ul li a:hover {
+  color: rgb(222, 184, 135);
+}
+
+.active {
+  background-color: gray;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.no-flex {
+  display: block;
+}
+
+main section {
+  padding: 1rem;
+}
+
+section.left {
+  flex: 1 1 200px;
+}
+
+section.left img {
+  width: 90%;
+}
+
+section.left h3 {
+  margin-bottom: 1rem;
+}
+
+section.left table {
+  margin-top: 1rem;
+}
+
+section.left table,
+section.left td {
+  padding: 0.25rem;
+}
+
+section.right {
+  flex: 4 1 500px;
+}
+
+section.right h3 {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+p {
+  padding: 0.5rem 0rem;
+}
+
+section.right ul {
+  margin-left: 1.5rem;
+}
+
+.player {
+  margin: 1.5rem;
+  border: 2px solid burlywood;
+  padding: 0.5rem;
+}
+
+.player h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.3rem 0rem;
+}
+
+.player h5 {
+  font-size: 1.05rem;
+  color: rgb(13, 210, 210);
+  border-top: 2px solid burlywood;
+  padding-top: 0.5rem;
+}
+
+section.Japan {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-bottom: 1.5px solid gray;
+}
+
+section.Japan div.image {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+
+section.Japan div.image img {
+  width: 100%;
+}
+
+section.Japan div.info {
+  flex: 3 1 600px;
+  padding: 2rem;
+}
+
+section.Japan div.info ul li,
+section.competition div.text ul li {
+  margin-left: 1.5rem;
+}
+
+section.competition {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+section.competition div.text {
+  flex: 5 1 300px;
+  padding: 1rem;
+}
+
+section.competition div.text h3 {
+  font-size: 2rem;
+  color: rgb(60, 210, 230);
+}
+
+section.competition div.pie {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+}
+
+#piechart {
+  width: 100%;
+}
+
+section.China h3,
+section.Taiwan h3,
+section.list h3 {
+  font-size: 2rem;
+  color: rgb(60, 210, 230);
+}
+
+section.list table,
+td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+section.list th {
+  text-align: center;
+  background-color: rgb(4, 118, 118);
+}
+
+section.list th,
+td {
+  width: 15rem;
+}
+
+section.list ul,
+section.list li {
+  margin-left: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
